@@ -41,4 +41,4 @@ Only Chrome
   
 ## License
 
-MIT
+The Unlicense
