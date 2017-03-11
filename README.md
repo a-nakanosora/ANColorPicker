@@ -27,11 +27,14 @@ Only Chrome
     ancp.getContainer()
 
     ancp.setColor(r,g,b)
+      -- 0 <= r,g,b <= 255
 
     ancp.setColorHsv(h,s,v)
+      -- 0 <= h <= 360
+         0 <= s,v <= 255
 
     ancp.onChange(callback)
-    -- callback : ({rgb, hsv, isTrusted})=>{ ... }
+      -- callback : ({rgb, hsv, isTrusted})=>{ ... }
   
 ## License
 
