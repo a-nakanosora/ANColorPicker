@@ -35,6 +35,9 @@ Only Chrome
 
     ancp.onChange(callback)
       -- callback : ({rgb, hsv, isTrusted})=>{ ... }
+        - rgb : Array -- [r,g,b]
+        - hsv : Array -- [h,s,v]
+        - isTrusted : Boolean -- will be `false` when changes of the color picker are triggered by `.setColor()` / `.setColorHsv()`
   
 ## License
 
