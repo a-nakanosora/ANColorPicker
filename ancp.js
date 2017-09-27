@@ -83,8 +83,8 @@ const {ANColorPicker} = (function(){
             this.dom.canvas.addEventListener('mousedown', e=>{
                 e.preventDefault()
                 const r = e.target.getClientRects()[0]
-                const baseX = r.left
-                const baseY = r.top
+                const baseX = r.left+window.scrollX
+                const baseY = r.top+window.scrollY
 
                 const update = e=>{
                     const p = {x:e.pageX-baseX, y:e.pageY-baseY}
@@ -127,8 +127,8 @@ const {ANColorPicker} = (function(){
             this.dom.canvasOutside.addEventListener('mousedown', e=>{
                 e.preventDefault()
                 const r = e.target.getClientRects()[0]
-                const baseX = r.left
-                const baseY = r.top
+                const baseX = r.left+window.scrollX
+                const baseY = r.top+window.scrollY
 
                 const update = e =>{
                     const p = {x:e.pageX-baseX, y:e.pageY-baseY}
